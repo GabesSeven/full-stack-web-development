@@ -1,0 +1,51 @@
+/*.texto {
+	color: blue;
+	background: orange;
+}*/
+
+/* ------------------- */
+
+/* Modelo de caixa */
+
+/*.conteudo {
+	border: 1px solid red;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding: 20px 15px 10px 5px;
+	padding: 20px 5px;
+	padding: 20px;
+
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin: 20px 15px 10px 5px;
+	margin: 20px 5px;
+	margin: 20px;
+
+
+	width: 150px;
+}*/
+
+/*As margens da BOX A e BOX B se sobrepoem, 
+ficando a maior margem entre eles*/
+
+/*.conteudo2 {
+	border: 1px solid red;/
+	margin: 5px;
+	width: 150px;
+}*/
+
+/* Notícia */
+
+#noticia {
+	background: #f9f9f9;
+	border: 1px solid gray;
+	padding: 10px;
+}
+
+h2 {
+	margin: 0px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Elementos inline, block e inline-block</title>
+
+	<style type="text/css">
+
+		.borda {
+			border: 1px solid red;
+			/*display: inline;*/
+			/*display: block;*/
+			display: inline-block;
+
+			/*
+				inline-block só cai para outra linha quando não há mais
+				espaço na linha superior
+			*/
+		}
+		
+
+	</style>
+
+</head>
+
+<body>
+
+	<span class="borda">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+	<span class="borda">inline 2</span>
+
+
+	<!-- 
+
+	<h1 class="borda">Bloco 1</h1> 
+	<h1 class="borda">Bloco 2</h1>
+	
+	<div class="borda">Bloco 1</div> 
+	<div class="borda">Bloco 2</div>
+
+	-->
+
+</body>
+
+</html>
