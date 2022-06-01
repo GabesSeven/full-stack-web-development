@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>Seletores</title>
+
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	</head>
+
+
+	<body>
+
+		<!-- seletor de irmão adjacente seleciona somente o primeiro adjacente posterior -->
+		<!-- seletor de irmão geral seleciona todos adjacente posterior -->
+		<div id="cabecalho">
+			<p>Parágrafo 0 da página</p>
+			<h1>Título da página</h1>
+			<p>Parágrafo 1 da página</p>
+			<p>Parágrafo 2 da página</p>
+			<div>
+				<p>Parágrafo 3 da página</p>
+			</div>
+		</div>
+
+
+		<div>
+			<h2>Título</h2>
+			<p>
+				Esse é um parágrafo
+				<a href="">clique aqui</a>
+			</p>
+		</div>
+
+		<ul>
+			<!--seletores de descendente se aplica a filhos indireitos, ou seja, "netos", "bisnetos", etc-->
+			<li> 
+				<span>
+					<a href="">Home</a>
+				</span>
+			</li>
+			<!--seletores de filho só se aplica a filhos direitos, e não a "netos"-->
+			<li>
+				<a href="">Sobre</a>
+			</li>
+		</ul>
+
+		<div id="cabecalho">
+			<h1>Título da página</h1>
+			<p>Parágrafo 1 da página</p>
+		</div>
+
+		<span class="verde">teste span</span>
+		<p class="verde">Teste parágrafo</p>
+
+	</body>
+
+</html>
