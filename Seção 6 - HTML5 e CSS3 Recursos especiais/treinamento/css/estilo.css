@@ -1,0 +1,179 @@
+/* Border Radius e Box Sizing */
+
+/*#caixa {
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	padding: 50px;
+	margin: 10px;
+
+	border-radius: 150px;
+	border-radius: 20px 90px;
+	border-radius: 10px 50px 80px 100px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+#caixa2 {
+	width: 400px;
+	height: 300px;
+	background: #b9c941;
+}
+
+.arredondamento {	
+	border-radius: 150px;
+}*/
+
+
+/* Degrades e transparências */
+/*#caixa {
+	width: 300px;
+	height: 300px;
+	background: url("../imagens/camera.png");
+	background: linear-gradient(red, green);
+	background: linear-gradient(to left, red, green);
+	background: linear-gradient(to right, red, green);
+	background: linear-gradient(to bottom, red, green);
+	background: linear-gradient(to top, red, green);
+	background: linear-gradient(60deg, red, green);
+	background: linear-gradient(120deg, red, green, yellow, blue);
+	background: radial-gradient(red, green, yellow, blue);
+}
+
+#caixa h1 {
+	background: rgba(255, 255, 255, .5);
+}*/
+
+/* Sombras */
+/*#caixa {
+	width: 300px;
+	height: 300px;
+	padding: 8px;
+	margin: 20px;
+	background: #009670;
+	box-shadow: 20px 20px 2px 10px rgba(0, 0, 0, .2);
+}
+
+#caixa h1 {
+	color: white;
+	text-shadow: 20px 20px black;
+	text-shadow: 20px 20px rgba(0, 0, 0, .5);
+	text-shadow: 20px 20px 5px rgba(0, 0, 0, .5);
+}*/
+
+/* Animações */
+/*@-webkit-keyframes animacao-caixa {
+	from {
+		background: red;
+	}
+
+	to {
+		background: green;
+	}
+}
+
+@-moz-keyframes animacao-caixa {
+	from {
+		background: red;
+	}
+
+	to {
+		background: green;
+	}
+}
+
+@-o-keyframes animacao-caixa {
+	from {
+		background: red;
+	}
+
+	to {
+		background: green;
+	}
+}*/
+
+/*@keyframes animacao-caixa {
+	from {
+		background: red;
+		border-radius: 0px;
+		top: 0;
+		left: 0;
+	}
+
+	to {
+		background: green;
+		border-radius: 300px;
+		top: 200px;
+		left: 200px;
+	}
+}
+
+#caixa {
+	width: 300px;
+	height: 300px;
+	background: red;
+	position: relative;
+	animation-name: animacao-caixa;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+
+	-webkit-animation: animacao-caixa 5s 3s 2 alternate;
+	-moz-animation: animacao-caixa 5s 3s 2 alternate;
+	-o-animation: animacao-caixa 5s 3s 2 alternate;
+	animation: animacao-caixa 5s 3s 2 alternate;
+}*/
+
+/* Transições */
+/*#caixa {
+	width: 300px;
+	height: 300px;
+	background: orange;
+}
+
+#caixa:hover {
+	width: 400px;
+	background: yellow;
+
+	transition: width 3s, background 3s;
+	
+	-webkit-transition: all 3s;
+	-moz-transition: all 3s;
+	-o-transition: all 3s;
+	transition: all 3s;
+}*/
+
+/* Novas tags html 5 */
+header {
+	border: 1px solid #ccc;
+	background: #f2f2f2;
+	padding: 10px;
+}
+
+nav	{
+	border: 1px solid green;
+	background: #f2f2f2;
+	padding: 10px;
+}
+
+footer {
+	background: #f1f1f1;
+}
+
+article {
+	background: orange;
+	padding: 10px;
+}
+
+section {
+	border: 1px dotted #fff;
+}
+
+aside {
+	background: blue;
+}

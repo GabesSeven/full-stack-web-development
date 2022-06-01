@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Flexbox - Flexibe Box Layout</title>
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+		<style type="text/css">
+			
+			#conteudo {
+				background: #dcdcdc;
+				height: 600px;
+				display: flex;
+				
+				/**** flexbox aula 1 *****/
+
+				/*flex-direction: row;
+				flex-direction: row-reverse;
+				flex-direction: column;
+				flex-direction: column-reverse;
+
+				flex-wrap: nowrap;
+				flex-wrap: wrap;
+				flex-wrap: wrap-reverse;
+
+				justify-content: flex-start;
+				justify-content: flex-end;
+				justify-content: center;
+				justify-content: space-between;
+				justify-content: space-around;
+
+				align-items: stretch;
+				align-items: center;
+				align-items: flex-start;
+				align-items: flex-end;
+				align-items: baseline;*/
+
+
+				/**** flexbox aula 2 *****/
+
+
+			}
+
+			.item {
+				/*width: 200px;*/
+				height: 100px;
+				margin: 10px;
+				background: white;
+				border: 1px solid gray;
+
+				/*  define proporção de espaço ocupado por um item */
+				/*flex-grow: 0;*/
+				/*flex-grow: 1;*/
+			
+				/*  define a capacidade de redução de tamanho do item */
+				/*flex-shrink: 1;*/
+
+				/*  indica o tamanho inicial do flex item antes da distribuição do espaço restante */
+				flex-basis: auto;
+				flex-basis: 200px;
+
+
+			}
+
+			.item1 {
+				/*flex-grow: 1;*/
+				/*flex-shrink: 1;*/
+			}
+
+			.item2 {
+				/*flex-grow: 2;*/
+				/*flex-shrink: 2;*/
+			}
+
+			.item3 {
+				/*flex-grow: 2;*/
+				/*flex-shrink: 5;*/
+			}
+
+			/*
+
+			.ordem1 {
+				order: 1;
+			}
+
+			.ordem2 {
+				order: 2;
+			}
+
+			.ordem3 {
+				order: 3;
+			}
+
+			.ordem4 {
+				order: 4;
+			}
+
+			.ordem {
+				 todos por padrão possuem valor 0 
+				order: -1;
+				order: 0;
+			}
+
+			*/
+
+		</style>
+
+	</head>
+	
+	<body>
+
+		<h1>Flexbox</h1>
+		<div id="conteudo">
+
+			
+
+			<!-- 
+			
+			<div class="item">01</div>
+			<div class="item">02</div>
+			<div class="item">03</div>
+			<div class="item">04</div>
+
+			<div class="item ordem4">01</div>
+			<div class="item ordem3">02</div>
+			<div class="item ordem2">03</div>
+			<div class="item ordem1">04</div> 
+
+		    -->
+
+			<!-- 
+
+			<div class="item">01</div> 
+			<div class="item">02</div>
+			<div class="item">03</div>
+			<div class="item ordem">04</div> 
+
+			-->
+			
+			<!-- 
+			
+			<div class="item item1">01</div> 
+			<div class="item">02</div>
+			<div class="item">03</div>
+			<div class="item">04</div>
+ 			
+			
+			<div class="item item1">01</div> 
+			<div class="item item2">02</div>
+			<div class="item">03</div>
+			<div class="item">04</div> 
+
+
+ 			<div class="item item1">01</div> 
+			<div class="item item2">02</div>
+			<div class="item item3">03</div>
+			<div class="item">04</div> 
+
+ 			-->
+
+ 			<div class="item item1">01</div> 
+			<div class="item item2">02</div>
+			<div class="item item3">03</div>
+			<div class="item">04</div> 
+
+
+
+		</div>
+
+	</body>
+
+</html>
