@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title>JavaScript</title>
+		
+		<script>
+			
+			/**** while ****/ 
+			/*
+			var x = 1
+
+			while(x <= 10) {
+				x += 1
+				
+				if(x === 5)
+					// break
+					continue
+
+				document.write(x + '<br />')
+			}
+
+			document.write('fim <br />')
+			*/
+
+			/**** do while ****/ 
+			/*
+			var x = 1
+
+			do {
+				document.write(x + '<br />')
+				x += 1
+			} while( x <= 10 )
+			*/
+
+			/**** for ****/ 
+			// for (var x = 10; x >= 0; x--)
+			// 	document.write(x + '<br />')
+
+			/**** for in ****/ 
+			// var listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria']
+			/*
+			var listaConvidados = Array()
+
+			listaConvidados['a'] = 'Jorge'
+			listaConvidados[10] = 'Jamilton'
+			listaConvidados['zebra'] = 'José'
+			listaConvidados[-1] = 'Ana'
+			listaConvidados[true] = 'Maria'
+
+			console.log(listaConvidados)
+			*/
+
+			// permite navegar por elementos que tenham chave customizadas
+			/*
+			for(var x in listaConvidados) {
+				console.log('Índice: ' + x + ', valor: ' + listaConvidados[x])
+			}
+			*/
+
+			/**** for each ****/ 
+			// var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+			var listaFuncionarios = Array()
+
+			// forEach atuará somente sobre 3 e 27, pois são os únicos índice >= 0
+			listaFuncionarios['x'] = 'Viviane'
+			listaFuncionarios[false] = 'Rosângela'
+			listaFuncionarios[3] = 'Miguel'
+			listaFuncionarios[27] = 'Lucas'
+			listaFuncionarios[-12] = 'Fernanda'
+
+
+			/*
+			
+			console.log(listaFuncionarios)
+			document.write(listaFuncionarios[3])
+
+
+			listaFuncionarios.forEach(function(valor, indice, array) {
+				console.log('Índice: ' + indice + ' | valor: ' + valor)
+				
+				if (valor == 'Lucas')
+					array[indice] = 'Um novo valor'
+			})
+
+			console.log(listaFuncionarios)
+			document.write('<br />' + listaFuncionarios[3])
+			
+			*/
+
+			/*
+
+			listaFuncionarios.forEach(function(valor) {
+				console.log('valor: ' + valor)
+			})
+
+			listaFuncionarios.forEach(function(valor, indice) {
+				console.log('índice: ' + indice + 'valor: ' + valor)
+			})
+
+			*/
+
+			/* var f = function(valor, indice) {
+				console.log('índice: ' + indice + ' | valor: ' + valor)
+			}
+
+			listaFuncionarios.forEach(f)
+			
+			*/
+
+			/********** atividade **********/
+			var array = ['1', '2', '3', '4', '5', '6']
+
+			document.write('***** EXERCÍCIO 1 ***** <br />')
+			for(var x = 0; x <= array.length; x++)
+				document.write('índice: ' + x + ' | valor: ' + array[x] + '<br />')
+
+			document.write('<hr />')
+			document.write('***** EXERCÍCIO 2 ***** <br />')
+			var x = 1, y = 1
+			while (y <= 10) {
+				
+				while (x <= 10) {
+					document.write(y + ' x '  + x + ' = ' + (y * x) + '<br />')
+					x += 1
+				}
+
+				document.write('<hr />')
+				y += 1
+				x = 1
+			}
+
+		</script>
+
+	</head>
+
+
+	<body>
+
+		<h1>Estruturas de repetição (while / do while / for / for in / for each)</h1>
+
+	</body>
+
+</html>

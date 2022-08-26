@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title>JavaScript</title>
+		
+		<script>
+
+			function acao1() {
+				alert('Evento disparado - onkeydown')
+			}
+
+			function acao2() {
+				alert('Evento disparado - onkeyup')
+			}
+
+			function acao3() {
+				alert('Evento disparado - onkeypress')
+			}
+
+
+		</script>
+
+	</head>
+
+
+	<body>
+
+		<h1>Eventos teclado</h1>
+
+		<!-- evento antes do caractere aparecer na tela -->
+		<input onkeydown="acao1()" type="text" /><br>
+		<br>
+
+		<!-- evento depois do caractere aparecer na tela -->
+		<input onkeyup="acao2()" type="text" /><br>
+		<br>
+
+		<!-- só é disparado se a tecla pressionada representar um caractere -->
+		<input onkeypress="acao3()" type="text" /><br>
+		<br>
+
+	</body>
+
+</html>

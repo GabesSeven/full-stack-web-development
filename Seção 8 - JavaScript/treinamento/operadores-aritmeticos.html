@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title>JavaScript</title>
+		
+		<script>
+			
+
+			/**** aula 01 - operadores aritméticos ****/
+
+			// var num1 = 9
+			// var num2 = 2
+			/*
+			var num1 = prompt('Digite o valor de num1')
+			var num2 = prompt('Digite o valor de num2')
+
+			num1 = parseFloat(num1)
+			num2 = parseFloat(num2)
+
+			document.write('A soma entre ' + num1 + ' e '+ num2 + ' é: ' + (num1 + num2) + '<br />')
+			document.write('A subtração entre ' + num1 + ' e '+ num2 + ' é: ' + (num1 - num2) + '<br />')
+			document.write('A multiplicação entre ' + num1 + ' e '+ num2 + ' é: ' + (num1 * num2) + '<br />')
+			document.write('O módulo entre ' + num1 + ' e '+ num2 + ' é: ' + (num1 % num2) + '<br />')
+			document.write('O incremento de pós ' + num1 + ' é: ' + (num1++) + '<br />')
+			document.write('num1 é: ' + num1 + '<br />')
+			document.write('O incremento de pré ' + num1 + ' é: ' + (++num1) + '<br />')
+			document.write('O decremento de pós ' + num2 + ' é: ' + (num2--) + '<br />')
+			document.write('num2 é: ' + num2 + '<br />')
+			document.write('O decremento entre pré ' + num2 + ' é: ' + (--num2) + '<br />') 
+			*/
+			
+			/**** aula 02 - operadores aritméticos, atribuição de valores ****/
+
+			// var teste = 10
+			// var teste2 = 'Olá '
+			// teste = teste + 5
+			// teste += 5
+			// teste2 += 'Jorge'
+			// document.write(teste + '<br />')
+			// document.write(teste2 + '<br />')
+
+			// teste = 10
+			// teste = teste - 5
+			// teste -= 5
+			// document.write(teste + '<br />')
+
+			// teste = 10
+			// teste = teste * 5
+			// teste *= 5
+			// document.write(teste + '<br />')
+
+			// teste = 10
+			// teste = teste / 2
+			// teste /= 2
+			// document.write(teste + '<br />')
+
+			// teste = 10
+			// teste = teste % 2
+			// teste %= 2
+			// document.write(teste + '<br />')
+
+			/**** aula 03 - operadores aritméticos, precedência de operadores ****/
+			
+			// 1º: () 
+			// 2º: multiplicação e divisão
+			// 3º: soma e subtração
+			// document.write(11 - 5 + 5 * 2 / 5)
+
+			/**** atividade ****/
+			var nome = prompt('Digite o nome:')
+			var altura = prompt('Digite a altura (cm):')
+			var peso = prompt('Digite o peso (kg):')
+			var classificacao = ''
+
+			peso = parseFloat(peso)
+			altura = parseFloat(altura) 
+
+			altura /= 100
+			imc = peso / (altura * altura)
+
+			if (imc <= 15.99)
+				classificacao = 'Baixa peso muito grave'
+			else if (imc => 16 && imc <= 16.99)
+				classificacao = 'Baixa peso grave'
+			else if (imc => 17 && imc <= 18.49):
+				classificacao = 'Baixa peso'
+			else if (imc => 18.5 && imc <= 24.99):
+				classificacao = 'Peso normal'
+			else if (imc => 25 && imc <= 29.99):
+				classificacao = 'Sobrepeso'
+			else if (imc => 30 && imc <= 34.99):
+				classificacao = 'Obesidade grau I'
+			else if (imc => 35 && imc <= 39.99):
+				classificacao = 'Obesidade grau II'
+		 
+
+
+			document.write(nome + ' possui índice de massa corporal igual a ' + imc + ', sendo classificado como: ' + classificacao + '.')
+
+		</script>
+
+	</head>
+	
+	<body>
+
+		<h1>Operadores aritméticos</h1>
+
+		
+
+	</body>
+
+</html>

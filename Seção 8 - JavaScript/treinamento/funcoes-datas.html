@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title>JavaScript</title>
+		
+		<script>
+
+			/**** aula 01 - bibliotecas nativas - datas ****/
+
+			/**** 
+				JS solicita a data para o Brownser
+				Brownser solicita a data para o Sistema Operacional
+			****/
+
+			// var data = new Date()
+			// document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())		
+
+			/**** aula 02 - bibliotecas nativas - datas - atividade ****/
+			var data = new Date()
+
+			/**** adicionando e removendo dias da data ****/
+			/*
+			document.write(data.toString())
+			data.setDate(data.getDate() + 80)
+			document.write('<hr />')
+			document.write(data.toString())
+			document.write('<br /><br /><hr />')
+			*/
+
+			/**** adicionando e removendo meses da data ****/
+			/*
+			document.write(data.toString())
+			data.setMonth(data.getMonth() - 1)
+			document.write('<hr />')
+			document.write(data.toString())
+			document.write('<br /><br /><hr />')
+			*/
+
+			/**** adicionando e removendo meses da data ****/
+			/*
+			document.write(data.toString())
+			data.setFullYear(data.getFullYear() + 4)
+			document.write('<hr />')
+			document.write(data.toString())
+			document.write('<br /><br /><hr />') 
+			*/
+
+			/**** calculando diferenças entre duas datas ****/
+			// 03/06/2022
+			// var data1 = new Date(2022, 5, 3)
+
+			// 11/06/2022
+			// var data2 = new Date(2022, 5, 11)
+
+			// document.write(data1.toString())
+			// document.write('<hr />')
+			// document.write(data2.toString())
+			// document.write('<br /><br /><hr />')
+
+			/**** getTime()
+				recupera todos milisegundos desde 
+				1 de Janeiro de 1970 até data atual
+			 ****/
+			// document.write(data1.getTime())
+			// document.write('<hr />')
+			// document.write(data2.getTime())
+			// document.write('<br /><br /><hr />')
+
+			// var milissegudos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+			// document.write(milissegudos_entre_datas)
+			// document.write('<hr />')
+			/**** 
+				1 dia tem 24 horas
+				cada hora tem 60 minutos
+				cada minutos tem 60 segundos
+				cada segundos tem 1000 milissegundos
+				quantos milissegundos há em um dia?
+			 ****/
+			//  var milissegudos_por_dia = 1 * 25 * 60 * 60 * 1000
+			//  document.write('1 dia tem: ' + milissegudos_por_dia + 'milissegundos.')
+
+			// document.write('<br /><br /><hr />')
+			// document.write('A diferença entre data 1 e data 2 é de: ' + Math.ceil(milissegudos_entre_datas / milissegudos_por_dia) + ' dia(s).')
+
+
+			/**** atividade ****/
+			var num1 = prompt('Digite um número:')
+			var operacao = prompt('Digite a operação:')
+			var num2 = prompt('Digite um número:')
+
+			function calc(num1, num2, operacao) {
+				num1 = parseFloat(num1)
+				num2 = parseFloat(num2)
+
+				var resultado = 0
+
+				if (operacao == 'soma') 
+					resultado = num1 + num2
+
+				if (operacao == 'subtracao') 
+					resultado = num1 - num2
+
+				return resultado
+			}
+
+			document.write('O resultado é: ' + calc(num1, num2, operacao))
+
+
+
+		</script>
+
+	</head>
+	
+	<body>
+
+		<h1>Funções datas</h1>
+
+		
+
+	</body>
+
+</html>

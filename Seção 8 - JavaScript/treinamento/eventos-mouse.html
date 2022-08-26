@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title>JavaScript</title>
+		
+		<script>
+
+			function acao() {
+				alert('Evento disparado')
+			}
+
+			function acao1() {
+				alert('Elemento foi clicado')
+			}
+
+			function acao2() {
+				alert('O cursor do mouse deixou a região do elemento')
+			}
+
+
+
+		</script>
+
+	</head>
+	
+		<!-- 
+			W3School:
+			Consultar na documentação quais elementos suportam determinados eventos
+		-->
+		
+	<body>
+
+		<h1>Eventos mouse</h1>
+		<!-- um único click -->
+		<div onclick="alert('Teste')" style="background: #ccc; height: 150px; width: 150px;"></div>
+		<div onclick="acao()" style="background: red; height: 150px; width: 150px;"></div>
+
+		<!-- dois clicks -->
+		<div ondblclick="acao()" style="background: blue; height: 150px; width: 150px;"></div>
+		
+		<!-- quando o click é desclicado (dar pra ficar segurando o click) -->
+		<div onmouseup="acao()" style="background: pink; height: 150px; width: 150px;"></div>
+
+		<!-- mouse sobre o elemento -->
+		<div onmouseover="acao()" style="background: yellow; height: 150px; width: 150px;"></div>
+
+		<!-- quando mouse sai da regiião do elemento -->
+		<div onmouseout="acao()" style="background: green; height: 150px; width: 150px;"></div>
+
+		<!-- elementos combinados -->
+		<div onclick="acao1()" onmouseout="acao2()" style="background: black; height: 150px; width: 150px;"></div>
+
+
+
+
+	</body>
+
+</html>

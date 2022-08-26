@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JavaScript</title>
+    
+    <style>
+      
+        .estilo1 {
+          background: #FF0000;
+          color: #FFF;
+        }
+
+        .estilo2 {
+          background-color: #FF0000;
+          color: #FFF;
+          width: 400px;
+          height: 50px;
+          text-align: center;
+          font-size: 25px;
+          padding: 25px;
+        }
+
+    </style>
+
+    <script>
+      
+      function modificaClasse() {
+
+        document.getElementById('mensagem').className = 'estilo2'
+      }
+
+      /**** atividade ****/ 
+      function modificaBackgroundOnFocus(color){
+        document.getElementById('input-principal').style.background = color
+      }
+
+      function modificaBackgroundBlurFocus(color){
+        
+        var string = document.getElementById('input-principal').value
+        console.log(string.length)
+
+        document.getElementById('input-principal').value = ''
+
+        if (string.length > 3)
+          document.getElementById('input-principal').style.background = 'green'  
+        else 
+          document.getElementById('input-principal').style.background = 'red'  
+
+      }
+
+    </script>
+    
+  </head>
+
+  <body >
+
+    <h1>DOM - dom manipulando classes de elementos</h1>
+
+    <div id='mensagem' class="estilo1">Modificando a classe do elemento</div>
+    <hr>
+    <button type="button" onclick="modificaClasse()">Aplicar classe</button>
+    
+
+    <!-- atividade -->
+
+    <input type="text" id="input-principal" onfocus="modificaBackgroundOnFocus('yellow')" onblur="modificaBackgroundBlurFocus()">
+
+  </body>
+
+</html>
+

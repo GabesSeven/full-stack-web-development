@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title>JavaScript</title>
+		
+		<script>
+
+			
+
+
+		</script>
+
+	</head>
+
+
+	<body>
+
+		<h1>Eventos formulario</h1>
+
+		<!-- onfocus: quando o elemento recebe o foco (cursor do mouse) -->
+		<!-- onblur: quando o elemento perde o foco (cursor do mouse) -->
+		<input onfocus="console.log('recebeu o foco - onfocus')" onblur="console.log('perdeu o foco - onblur')" type="text" />
+		<br><br>
+
+
+		<!-- quando o estado do elemento é modificado -->
+		<select onchange="console.log('estado foi modificado - onchange')">
+			<option>-- Selecione --</option>
+			<option value="1">Primeira opção</option>
+			<option value="2">Segunda opção</option>
+		</select>
+
+	</body>
+
+</html>

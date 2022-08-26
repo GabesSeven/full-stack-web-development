@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title>JavaScript</title>
+		
+		<script>
+				
+			var lista_frutas = Array()
+
+			lista_frutas[0] = 'Maçã'							
+			lista_frutas[1] = 'Uva'
+			lista_frutas[2] = 'Banana'							
+			lista_frutas[3] = 'Morango'							
+			console.log(lista_frutas)	
+
+
+			// realiza uma ordenação alfanumérica dos elementos 
+			console.log(lista_frutas.sort())	
+			// dados são Case Sensitive			
+			
+
+			var lista_numeros = Array()
+
+			// lista_numeros[0] = 12
+			// lista_numeros[1] = 40
+			// lista_numeros[2] = 3										
+			// lista_numeros[3] = 7										
+			// lista_numeros[4] = 19	
+			// lista_numeros[5] = 1
+
+			lista_numeros[0] = '12'
+			lista_numeros[1] = '40'
+			lista_numeros[2] = '3'										
+			lista_numeros[3] = '7'										
+			lista_numeros[4] = '19'										
+			lista_numeros[5] = '1'	
+
+			console.log(lista_numeros.sort(ordenaNumeros))
+
+			function ordenaNumeros(a, b) {
+				/*
+					se (a - b) < 0: a ordenado antes de b
+					se (a - b) < 0: b ordenado antes de a
+					se (a - b) = 0: ordem é mantida
+				*/
+				return a - b
+			}	
+
+			/****************************************/
+			/**** atividade ****/
+			var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+			function adicionarObjetos() {
+				
+				var valor = document.getElementById('objeto').value
+
+				if (valor == '')
+					alert('Informe um valor válido')
+				else {
+					if (objetos.indexOf(valor) !== -1)
+						alert('Objeto já foi adicionado')
+					else {
+					 	objetos.push(valor)
+					 	console.log(objetos)
+					 	document.getElementById('objeto').value = ''
+					 }
+				} 
+			}
+
+			function ordenarObjetos() {
+				objetos.sort()
+				console.log(objetos)
+				
+			}
+
+
+
+
+		</script>
+
+	</head>
+
+
+	<body>
+
+		<h1>Array ordenação</h1>
+
+		<!-- **************************************** -->
+		<!-- atividade -->
+		<input type="text" id="objeto">
+		<button onclick='adicionarObjetos()'>Adicionar</button>
+		<button onclick='ordenarObjetos()'>Ordenar</button>
+
+
+	</body>
+
+</html>
