@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      /****
+        JSON é usado para comunicar OBJETOS LITERAIS
+        no backend ou entre aplicações
+      ****/
+
+      /**** objeto literal ****/
+      let produto = {
+        categoria: 'Eletrodoméstico',
+        descricao: 'Geladeira',
+        preco: 1999.00
+      }
+
+      /**** JSON ****/
+      let produtoJSON = '{"categoria": "Eletrodoméstico", "descricao": "Geladeira", "preco": 1999.00}'
+
+      console.log(produto)
+      console.log(produtoJSON)
+
+      console.log(JSON.stringify(produto))
+      console.log(JSON.parse(produtoJSON))
+
+    </script>
+
+
+  </head>
+
+  <body>
+
+    <h1>Objeto literal - diferença entre JSON</h1>
+
+  </body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      let funcionarios = [
+        { nome: 'Fernanda', cargo: 'Analista de RH', salario: 3100, status: 'ativo' },
+        { nome: 'Miguel', cargo: 'Assistende Administrativo', salario: 1700, status: 'ativo' },
+        { nome: 'Rosa', cargo: 'Auxiliar de Contabilidade', salario: 1600, status: 'inativo' },
+        { nome: 'Roberto', cargo: 'Programador PHP', salario: 4500, status: 'ativo' },
+        { nome: 'Maria', cargo: 'Engenheira Mecânica', salario: 7500, status: 'ativo' }
+      ]
+      console.log(funcionarios)
+
+      console.log(funcionarios.filter(function(f) {return true}))
+      console.log(funcionarios.filter(function(f) {return false}))
+      console.log(funcionarios.filter(function(f) {return f.salario < 2000}))
+      console.log(funcionarios.filter(function(f) {return f.salario < 2000}).filter(function(f) {return f.status == 'ativo'}))
+      console.log(funcionarios.filter(f => f.salario < 2000).filter(f => f.status == 'ativo'))
+
+    </script>
+
+
+  </head>
+
+  <body>
+
+    <h1>Array filter</h1>
+
+  </body>
+
+</html>

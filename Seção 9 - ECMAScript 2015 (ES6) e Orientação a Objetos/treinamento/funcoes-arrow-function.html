@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      let quadrado = function(x = 5) {
+        return x * x
+      }
+
+      let quadrado2 = (x) => {
+        return x * x
+      }
+
+      /****
+        se houver somente um parâmetro,
+        há como omitir o sinal de abre e fecha parentenses
+      ****/
+      let quadrado3 = x => {
+        return x * x
+      }
+
+      /****
+        se o bloco da função tiver somente uma linha de código
+        (return implícito)
+      ****/
+      let quadrado4 = x => x * x
+
+      document.write(quadrado(3) + '<br />')
+      document.write(quadrado2(4) + '<br />')
+      document.write(quadrado3(5) + '<br />')
+      document.write(quadrado4(6) + '<br />')
+
+      let parOuImpar = function(numero) {
+        if(numero % 2 === 0)
+          return 'par'
+        else
+          return 'impar'
+      }
+
+      let parOuImpar2 = numero => numero % 2 === 0 ? 'par' : 'impar'
+
+      document.write(parOuImpar(6) + '<br />')
+      document.write(parOuImpar2(5) + '<br />')
+
+
+    </script>
+
+
+  </head>
+
+  <body>
+
+    <h1>Funções - arrow function</h1>
+
+  </body>
+
+</html>

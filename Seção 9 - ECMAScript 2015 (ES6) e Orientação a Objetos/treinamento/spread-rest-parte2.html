@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      /**** contexto REST ****/
+
+
+      /**** REST: em funções ****/
+      /****
+        utiliza-se o operador REST para juntar
+        todos os parâmetros passados (3, 8, 5, 7, -8, 10, 115)
+        em um único array [3, 8, 5, 7, -8, 10, 115]
+      ****/
+      function soma(...param) {
+        let resultado = 0
+
+        console.log(param)
+
+        param.forEach( v => resultado += v)
+        return resultado
+      }
+
+      console.log(soma(3, 8, 5, 7, -8, 10, 115))
+
+      /****
+        primeiro parâmetro é separado
+        demais parâmetro formam um único array [7, 12, 3, 49]
+      ****/
+      function multiplicacao(m, ...p) {
+        let resultado = 0
+
+        console.log(m)
+        console.log(p)
+
+        p.forEach( v => resultado += m * v )
+        return resultado
+      }
+
+      console.log(multiplicacao(5, 7, 12, 3, 49))
+
+    </script>
+
+  </head>
+
+  <body>
+
+  <h1>Spread e rest - parte 02</h1>
+
+  </body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      let nome = 'Gabriel'
+
+      // console.log('Oi ' + nome + ', tudo bem?')
+      console.log(`Oi ${nome}, tudo bem?`)
+      console.log(`
+        Oi ${nome},
+        tudo bem?
+      `)
+
+      console.log(`7 + 7 = ${7 + 7}`)
+
+      console.log(`7 + 7 = ${calcular(7, 7)}`)
+      function calcular(x, y) {
+        return x + y
+      }
+
+    </script>
+
+
+  </head>
+
+  <body>
+
+    <h1>Template string</h1>
+
+  </body>
+
+</html>

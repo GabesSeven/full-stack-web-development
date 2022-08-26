@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      /**** OBJETIVO: construir uma abstração de um cachorro e um passáro, que herdam a classe animal ****/
+
+      class Animal {
+        constructor() {
+          this.cor = ''
+          this.tamanho = null
+        }
+
+        dormir() {
+          console.log('Dormir')
+        }
+      }
+
+      class Cachorro extends Animal {
+        constructor() {
+          super()
+          this.orelhas = 'Grande e caídas'
+        }
+
+        correr() {
+          console.log('Correr')
+        }
+
+        rosnar() {
+          console.log('Rosnar')
+        }
+      }
+
+      class Passaro extends Animal {
+        constructor() {
+          super()
+          this.bico = 'Curto'
+        }
+
+        voar() {
+          console.log('Voar')
+        }
+      }
+
+      /****
+      Sempre ocorre efeito cascata, ou seja,
+      Papagaio gerdará Passaro,
+      consequentemente heradará Animal
+      ****/
+      class Papagaio extends Passaro {
+        constructor() {
+          super()
+          this.sabeFalar = true
+        }
+
+        falar() {
+          console.log('Falar')
+        }
+
+      }
+
+      let cachorro = new Cachorro()
+      console.log(cachorro)
+      let passaro = new Passaro()
+      console.log(passaro)
+
+      cachorro.dormir()
+      passaro.dormir()
+
+
+      let papagaio = new Papagaio()
+      console.log(passaro)
+
+      papagaio.falar()
+      papagaio.dormir()
+      papagaio.voar()
+
+
+    </script>
+
+
+  </head>
+
+  <body>
+
+  <h1>Orientação a objeto - pila da herança</h1>
+
+  </body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      /****
+
+        Destructuring e um operador de desestruturação, ou seja,
+        retira valores de estruturas: arrays ou objetos
+
+      ****/
+
+      /**** contexto de arrays ****/
+      let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão']
+
+      /**** NÃO usando destructuring ****/
+      // let a = frutas[0]
+      // let b = frutas[1]
+      // let c = frutas[2]
+
+      /**** usando destructuring ****/
+      let [a, b] = frutas
+      console.log(a, b)
+
+      // pulando um índice
+      let [a1, b1, , c1] = frutas
+      console.log(a1, b1, c1)
+
+      // extraindo índice inexistente
+      let [a2, b2, c2, d2, e2] = frutas
+      console.log(a2, b2, c2, d2, e2)
+
+      // extraindo índice inexistente usando operador default
+      let [a3, b3 = 'Abacate', c3, d3, e3 = 'Banana'] = frutas
+      console.log(a3, b3, c3, d3, e3)
+
+      // extraindo valores de arrays multidimensionais
+      let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'], ['José', 'Maria']]
+      let [ , [ ,n22]] = coisas
+      console.log(n22)
+      let [[ , , n13]] = coisas
+      console.log(n13)
+
+
+    </script>
+
+  </head>
+
+  <body>
+
+  <h1>Destructuring - parte 01</h1>
+
+  </body>
+
+</html>

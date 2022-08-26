@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      /****
+        3 escopos: global, função e bloco
+
+        CONST: não sofre alteração de valores
+               ao longo do processamento do script
+
+      ****/
+
+      /****
+      deve-se atribuir o valor no momento da criação da variável
+      senão causa erro no processamento
+      ****/
+      /*
+      const SERIE2
+      console.log(SERIE2)
+      */
+
+      /*
+      const SERIE = 'Friends'
+      console.log(SERIE)
+      */
+
+      /*
+      const SERIE = 'Friends'
+      SERIE = 'The Walking Dead'
+      console.log(SERIE)
+      */
+
+      const SERIE = 'Friends'
+
+      function x() {
+        const SERIE = 'The Walking Dead'
+        console.log('função: ' + SERIE)
+      }
+
+      x()
+
+      console.log('global: ' + SERIE)
+
+    </script>
+
+
+  </head>
+
+  <body>
+
+    <h1>Const</h1>
+
+  </body>
+
+</html>

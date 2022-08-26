@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      /****
+
+        Destructuring e um operador de desestruturação, ou seja,
+        retira valores de estruturas: arrays, objetos e funções
+
+        token varia:
+          - array: []
+          - objeto: {}
+
+      ****/
+
+      /**** contexto de funções ****/
+      /**** SEM usar Destructuring ****/
+      /*
+      let arr = [10, 20, 30, 40]
+
+      function teste(a, b) {
+        console.log(a, b)
+      }
+
+      teste(arr[0], arr[1])
+      */
+      /**** contexto de objetos ****/
+      /*
+      let obj = {
+        a: 10,
+        b: 20,
+        c: 30,
+        d: 40
+      }
+
+      function teste(a, b) {
+        console.log(a, b)
+      }
+
+      teste(obj.a, obj.b)
+      */
+
+
+      /**** usando Destructuring ****/
+      let arr = [10, 20, 30, 40]
+      let obj = {
+        a: 10,
+        b: 20,
+        c: 30,
+        d: 40
+      }
+
+      /**** contexto de funções ****/
+      function teste1([ a, b ]) {
+        console.log(a, b)
+      }
+
+      function teste2([ a, b, , c ]) {
+        console.log(a, b, c)
+      }
+
+      function teste3([ a, b, , c, d = 50 ]) {
+        console.log(a, b, c, d)
+      }
+
+      teste1(arr)
+      teste2(arr)
+      teste3(arr)
+
+      /**** contexto de objetos ****/
+      function teste4({ a, b }) {
+        console.log(a, b)
+      }
+
+      function teste5({ a: a1, b: b1, d }) {
+        console.log(a1, b1, d)
+      }
+
+      function teste6({ a, b, c, d = 50, e = 50 }) {
+        console.log(a, b, c, d)
+      }
+
+      teste4(obj)
+      teste5(obj)
+      teste6(obj)
+
+    </script>
+
+  </head>
+
+  <body>
+
+  <h1>Destructuring - parte 03</h1>
+
+  </body>
+
+</html>

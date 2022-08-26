@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      /**** OBJETIVO: construir uma abstração de uma TV ****/
+
+      class Tv {
+        constructor() {
+          /****  _ : usado como conveção para sinalizar "private" ao atributo ou método  ****/
+          this._relacaoCanais = Array(2, 4, 5, 7, 10)
+          this._canalAtivo = 5
+          this._volume = 5
+        }
+
+        /**** variáveis "private" devem ser alterada ou lidas usando método getters e setters ****/
+        get canalAtivo() {
+          return this._canalAtivo
+        }
+
+        set canalAtivo(canal) {
+          if (this._relacaoCanais.indexOf(canal) !== -1) {
+            this._canalAtivo = canal
+            console.log(`Canal alterado: ${canal}`)
+          } else
+            console.log('Canal inexistente... tente outro canal')
+        }
+
+      }
+
+      let tv = new Tv()
+      /***
+      é possível realizar essa operação,
+      porém a conveção adota a
+      utilização do método setter
+      ****/
+      // tv._canalAtivo = 7
+      tv.canalAtivo = 3
+      console.log(tv.canalAtivo)
+      tv.canalAtivo = 10
+      console.log(tv.canalAtivo)
+
+
+
+    </script>
+
+
+  </head>
+
+  <body>
+
+  <h1>Orientação a objeto - pila do encapsulamento</h1>
+
+  </body>
+
+</html>

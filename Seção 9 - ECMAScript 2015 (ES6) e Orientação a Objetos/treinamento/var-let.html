@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      /****
+        3 escopos: global, função e bloco
+
+        VAR: mantém a variável para todos os
+        escopor abaixo em ordem hieráquica (gera efeito cascata)
+
+        LET: preserva o escopo onde a variável é criada
+
+      ****/
+
+      // var serie = 'Friends'
+
+      /**** escopo global é o objeto 'window' ****/
+      /*
+      console.log('global: ' + window.serie)
+
+      function x() {
+
+        var serie = 'Prison Break'
+        console.log('função: ' + serie)
+
+        if(true) {
+          console.log('bloco dentro da função: ' + serie)
+        }
+      }
+
+      x()
+
+      if(true) {
+        console.log('bloco dentro do global: ' + serie)
+      }
+      */
+
+      /************************************************/
+      /*
+      function x() {
+
+        console.log('função: ' + serie)
+
+        if(true) {
+
+        }
+      }
+
+      x()
+
+      if(true) {
+        var serie = 'The Walking Dead'
+        console.log('bloco dentro do global: ' + serie)
+      }
+
+      console.log('global: ' + serie)
+      */
+
+      /************************************************/
+      /****
+
+      gerará um erro, pois não é possível ler do escopo global
+      uma variável criada no escopo de bloco dentro de função
+
+      ****/
+      /*
+      function x() {
+
+        console.log('função: ' + serie)
+
+        if(true) {
+          var serie = 'The Walking Dead'
+          console.log('bloco dentro da função: ' + serie)
+        }
+      }
+
+      x()
+
+      if(true) {
+        console.log('bloco dentro do global: ' + serie)
+      }
+
+      console.log('global: ' + serie)
+      */
+
+
+      /************************************************/
+      // if(true) {
+      //   let serie = 'Friends'
+      //   console.log(serie)
+      // }
+
+      /****
+      gerará um erro,
+      pois o let preserva o escopo de
+      onde a variável é criada
+      ****/
+      // console.log(serie)
+
+
+      /************************************************/
+      /*
+      var serie = 'Friends'
+
+      {
+        var serie = 'The Walking Dead'
+        console.log('dentro do bloco: ' + serie)
+      }
+
+      console.log('fora do bloco: ' + serie)
+      */
+
+      /************************************************/
+      let serie = 'Friends'
+
+      {
+        let serie = 'The Walking Dead'
+        console.log('dentro do bloco: ' + serie)
+      }
+
+      console.log('fora do bloco: ' + serie)
+
+      /************************************************/
+      let serie = 'Friends'
+
+      {
+        var serie = 'The Walking Dead'
+        console.log('dentro do bloco: ' + serie)
+      }
+
+      console.log('fora do bloco: ' + serie)
+
+    </script>
+
+
+  </head>
+
+  <body>
+
+    <h1>Var e let</h1>
+
+  </body>
+
+</html>

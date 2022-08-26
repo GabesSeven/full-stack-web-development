@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      /****
+
+        Destructuring e um operador de desestruturação, ou seja,
+        retira valores de estruturas: arrays, objetos e funções
+
+        token varia:
+          - array: []
+          - objeto: {}
+
+      ****/
+
+      // extraindo o valor da primeira variável separado dos outros elementos
+      let arr = [10, 20, 30, 40]
+
+      let [ a1, ...resto1 ] = arr
+
+      console.log(a1)
+      console.log(resto1)
+
+      //-----------------------------------
+      let obj = { a:10, b:20, c:30, d:40 }
+
+      let { a:a2, ...resto2 } = obj
+
+      console.log(a2)
+      console.log(resto2)
+
+    </script>
+
+  </head>
+
+  <body>
+
+  <h1>Destructuring - parte 04</h1>
+
+  </body>
+
+</html>

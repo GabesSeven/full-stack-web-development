@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      /**** OBJETIVO: construir uma abstração de um cachorro e um passáro, que herdam a classe animal ****/
+      class Animal {
+        constructor(cor, tamanho, peso) {
+          this.cor = cor
+          this.tamanho = tamanho
+          this.peso = peso
+        }
+
+        dormir() {
+          console.log('Dormir')
+        }
+      }
+
+      class Passaro extends Animal {
+        constructor(bico, cor, tamanho, peso) {
+          super(cor, tamanho, peso)
+          this.bico = bico
+        }
+
+        voar() {
+          console.log('Voar')
+        }
+      }
+
+      class Papagaio extends Passaro {
+        constructor(sabeFalar, cor, tamanho, peso) {
+          super('Médio', cor, tamanho, peso)
+          this.sabeFalar = sabeFalar
+        }
+
+        falar() {
+          console.log('Falar')
+        }
+      }
+
+      class Avestruz extends Passaro {
+        constructor() {
+          super('Grande', 'branco e preto', 250, 15000)
+        }
+
+        enterrarCabeca() {
+          console.log('Enterrar a cabeça!')
+        }
+
+        voar() {
+          console.log('Não sabe voar')
+        }
+      }
+
+      let papagaio = new Papagaio(true, 'verde', 25, 350)
+      console.log(papagaio)
+      papagaio.voar()
+
+      let avestruz = new Avestruz()
+      avestruz.enterrarCabeca()
+      avestruz.voar()
+
+    </script>
+
+  </head>
+
+  <body>
+
+  <h1>Orientação a objeto - pilar do polimorfismo</h1>
+
+  </body>
+
+</html>

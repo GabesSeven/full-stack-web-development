@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      /****
+
+        Destructuring e um operador de desestruturação, ou seja,
+        retira valores de estruturas: arrays ou objetos
+
+        token varia:
+          - array: []
+          - objeto: {}
+
+      ****/
+
+      /**** contexto de objetos ****/
+      let produto = {
+        descricao: 'Notebook',
+        preco: 1800,
+        detalhes: {
+          fabricante: 'abc',
+          modelo: 'xyz',
+        }
+      }
+
+      let { descricao, preco } = produto
+      console.log(descricao, preco)
+
+      // modificando o nome das variáveis
+      let { descricao: d, preco: p } = produto
+      console.log(d, p)
+
+      // extraindo atributo indefinido
+      let { descricao: d1, preco: p1, desconto: de1 } = produto
+      console.log(d1, p1, de1)
+
+      // assumindo valor por default
+      let { descricao: d2, preco: p2 = 2000, desconto: de2 = 5 } = produto
+      console.log(d2, p2, de2)
+
+      // em objetos multidimensioanais
+      let { detalhes: { fabricante, modelo } } = produto
+      console.log(fabricante, modelo)
+
+      let { detalhes: { fabricante: f, modelo: m = 'Não informado' } } = produto
+      console.log(f, m)
+
+
+    </script>
+
+  </head>
+
+  <body>
+
+  <h1>Destructuring - parte 02</h1>
+
+  </body>
+
+</html>

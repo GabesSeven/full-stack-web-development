@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+
+      let nome = 'Gabriel'
+      let idade = 29
+      let sexo = 'Masculino'
+      let profissao = 'Programador'
+
+      /**** versão ES5 ****/
+      let objeto = {
+        nome: nome,
+        idade: idade,
+        sexo: sexo,
+        profissao: profissao,
+        exibirResumo: function() {
+          console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}.`)
+        }
+      }
+
+      console.log(objeto)
+      objeto.exibirResumo()
+
+      /**** versão ES5 ****/
+      let objeto2 = {
+        nome,
+        idade,
+        sexo,
+        profissao,
+        exibirResumo() {
+          console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}.`)
+        }
+      }
+
+      console.log(objeto2)
+      objeto2.exibirResumo()
+
+    </script>
+
+  </head>
+
+  <body>
+
+  <h1>Orientação a objeto - objeto literal - melhorias na notação</h1>
+
+  </body>
+
+</html>

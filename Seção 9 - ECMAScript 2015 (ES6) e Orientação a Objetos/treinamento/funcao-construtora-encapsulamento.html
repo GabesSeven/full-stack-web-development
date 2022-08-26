@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inicial-scale-1">
+
+    <title>JavaScript</title>
+
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+      console.log('CARRO 1, NÃO ENCAPSULADO:')
+      /**** objeto com variáveis não encapsuladas ****/
+      let Carro = function() {
+
+        this.cor = 'Amarelo'
+        this.modelo = 'Chevette'
+        this.velocidadeAtual = 0
+        this.velocidadeMaxima = 180
+
+        this.acelerar = function() {
+          let velocidade = this.getVelocidadeAtual() + 50
+          if(velocidade > this.velocidadeMaxima)
+            velocidade = this.velocidadeMaxima
+          this.setVelocidadeAtual(velocidade)
+        }
+
+        this.getVelocidadeAtual = function() {
+          return this.velocidadeAtual
+        }
+
+        this.setVelocidadeAtual = function(velocidadeAtual) {
+          this.velocidadeAtual = velocidadeAtual
+        }
+      }
+
+      let carro = new Carro()
+
+      console.log(carro.velocidadeAtual)
+      carro.acelerar()
+      console.log(carro.velocidadeAtual)
+      carro.acelerar()
+      console.log(carro.velocidadeAtual)
+      carro.acelerar()
+      console.log(carro.velocidadeAtual)
+      carro.acelerar()
+      console.log(carro.velocidadeAtual)
+      carro.acelerar()
+      console.log(carro.velocidadeAtual)
+      carro.acelerar()
+      console.log(carro.velocidadeAtual)
+      carro.velocidadeMaxima = 280
+      carro.acelerar()
+      console.log(carro.velocidadeAtual)
+
+      console.log('CARRO 2, ENCAPSULADO:')
+      /**** objeto com variáveis encapsuladas ****/
+      let Carro2 = function() {
+
+        this.cor = 'Amarelo'
+        this.modelo = 'Chevette'
+        this.velocidadeAtual = 0
+
+        var velocidadeMaxima = 180
+        var quilometrosRodados = 0
+
+        this.acelerar = function() {
+          let velocidade = this.getVelocidadeAtual() + 50
+          if(velocidade > velocidadeMaxima)
+            velocidade = velocidadeMaxima
+          this.setVelocidadeAtual(velocidade)
+
+          // quilometrosRodados += .05
+          // console.log(quilometrosRodados)
+
+          setQuilometrosRodados(.07)
+        }
+
+        this.getVelocidadeAtual = function() {
+          return this.velocidadeAtual
+        }
+
+        this.setVelocidadeAtual = function(velocidadeAtual) {
+          this.velocidadeAtual = velocidadeAtual
+        }
+
+        var setQuilometrosRodados = function(q) {
+          quilometrosRodados += q
+          console.log(quilometrosRodados)
+        }
+
+      }
+
+      let carro2 = new Carro2()
+
+      console.log(carro2.velocidadeAtual)
+      carro2.acelerar()
+      console.log(carro2.velocidadeAtual)
+      carro2.acelerar()
+      console.log(carro2.velocidadeAtual)
+      carro2.acelerar()
+      console.log(carro2.velocidadeAtual)
+      carro2.acelerar()
+      console.log(carro2.velocidadeAtual)
+      carro2.acelerar()
+      console.log(carro2.velocidadeAtual)
+      carro2.acelerar()
+      console.log(carro2.velocidadeAtual)
+      carro2.velocidadeMaxima = 280
+      carro2.acelerar()
+      console.log(carro2.velocidadeAtual)
+
+
+      console.log(carro)
+      console.log(carro2)
+
+    </script>
+
+  </head>
+
+  <body>
+
+  <h1>Função construtora - encapsulamento</h1>
+
+  </body>
+
+</html>
