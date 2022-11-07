@@ -5,7 +5,7 @@
 ## Project description
 
 <p align="justify">
-  <a href="https://www.udemy.com/course/web-completo/">https://www.udemy.com/course/web-completo/</a>. <br>
+  <a href="https://www.udemy.com/course/web-completo/">https://www.udemy.com/course/web-completo/</a> <br>
   <br>
   Full stack web development course, carried out on the Udemy platform, taught by Jamilton Damasceno and Jorge Sant Ana. <br>
   <br>
