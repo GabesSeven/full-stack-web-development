@@ -2,7 +2,7 @@
 
 <hr>
 
-## Project description
+## 📋 Project description
 
 <p align="justify">
   <a href="https://www.udemy.com/course/web-completo/">https://www.udemy.com/course/web-completo/</a> <br>
