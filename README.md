@@ -30,7 +30,7 @@
     <li>Section 17: API with Slim Framework;</li>
     <li>Section 18: Introduction to WordPress (Blogging);</li>
     <li>Section 19: SASS;</li>
-    <li>Section 20: Creating Mobile Applications with IONIC</li>
+    <li>Section 20: Creating Mobile Applications with IONIC.</li>
   </ul>
 </p>
 
