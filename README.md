@@ -2,10 +2,11 @@
 
 <hr>
 
-## Descrição do projeto 
+## Project description
 
 <p align="justify">
   <a href="https://www.udemy.com/course/web-completo/">"https://www.udemy.com/course/web-completo/"</a>. <br>
+  <br>
   Full stack web development course, carried out on the Udemy platform, taught by Jamilton Damasceno and Jorge Sant Ana. <br>
   <br>
   The following content was taught in this course: <br>
@@ -35,6 +36,6 @@
 
 <hr>
 
-# 📁 Acesso ao projeto
+## 📁 Project access
 
 You can [access the project's source code](https://github.com/GabesSeven/full-stack-web-development/) or [download it](https://github.com/GabesSeven/full-stack-web-development/archive/refs/heads/main.zip).
