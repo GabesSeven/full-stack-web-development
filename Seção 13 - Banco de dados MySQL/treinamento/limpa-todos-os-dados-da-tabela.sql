@@ -1,0 +1,1 @@
+TRUNCATE tb_cursos;
